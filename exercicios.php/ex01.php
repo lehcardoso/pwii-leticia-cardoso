@@ -1,6 +1,11 @@
-<?php
-$km = 423;
-$litros = 35;
-$consumoMedio = $km / $litros;
+<form action="exercicio1.php" method="GET">
+    Distância Total: <input type="number" name="distancia"> KM <br> <br>
+    Combustível: <input type="number" name="combustivel"> L <br> <br>
+     <input type="submit">
+</form>
 
-echo "O consumo médio é: " . $consumoMedio . " km/l";
+<?php
+$consumo_medio =  $_GET["distancia"] / $_GET["combustivel"];
+echo "O consumo médio é: ${consumo_medio}";
+
+?>
